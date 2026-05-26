@@ -1,1 +1,116 @@
+1. Estrutura HTML (index.html)
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h2>Agro<span>Sustentável</span></h2>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-menu" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="btn-primary">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="sections">
+        <div class="container">
+            <h2 class="section-title">Nossos Pilares</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Produção Consciente</h3>
+                    <p>Cultivo inteligente que otimiza o uso do solo e reduz o desperdício de recursos naturais.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>Gestão Hídrica</h3>
+                    <p>Sistemas de irrigação de precisão e captação de água da chuva para preservar mananciais.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Reflorestamento</h3>
+                    <p>Integração Lavoura-Pecuária-Floresta (ILPF) para neutralizar emissões de carbono.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="sections bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Tecnologia a Serviço do Planeta</h2>
+            <p class="subtitle">Clique nos botões abaixo para ver como a tecnologia transforma o campo:</p>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-target="drone">Drones & IA</button>
+                    <button class="tab-btn" data-target="Bio">Bioinsumos</button>
+                    <button class="tab-btn" data-target="solos">Sensores de Solo</button>
+                </div>
+                
+                <div class="tab-content active" id="drone">
+                    <h3>Monitoramento por Drones</h3>
+                    <p>Mapeamento térmico e aéreo que identifica pragas e falhas na lavoura em tempo real, evitando o uso excessivo de defensivos químicos.</p>
+                </div>
+                <div class="tab-content" id="Bio">
+                    <h3>Defensivos Biológicos</h3>
+                    <p>Uso de microrganismos e predadores naturais para o controle de pragas, eliminando a dependência de produtos sintéticos agressivos.</p>
+                </div>
+                <div class="tab-content" id="solos">
+                    <h3>Sensores de Umidade de Precisão</h3>
+                    <p>Dispositivos IoT enterrados no solo que informam a quantidade exata de água que a planta precisa, evitando o desperdício de energia e água.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="sections">
+        <div class="container form-container">
+            <h2 class="section-title">Faça Parte Desse Futuro</h2>
+            <p class="text-center">Receba informativos sobre práticas agrícolas sustentáveis e inovações do setor.</p>
+            
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <input type="text" id="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu Melhor E-mail" required>
+                </div>
+                <button type="submit" class="btn-submit">Inscrever-se</button>
+            </form>
+            <div id="formFeedback" class="form-feedback"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Agro Sustentável. Todos os direitos reservados.</p>
+            <p>Equilíbrio entre produção e meio ambiente.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
